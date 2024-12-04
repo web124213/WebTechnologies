@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		margin:0 auto
+		 font-family: Arial, sans-serif
+	}
+	.header{
+		display: flex;
+		margin-left: 60px;
+		
+		margin-bottom: 20px;
+	}
+
+	.menu-bar{
+     list-style-type: none;
+
+	}
+	.menu-bar>li{
+		  display: inline-block;
+		  padding-left: 5px;
+		  padding-right: 5px;
+		  padding-bottom:10px;
+		  padding-top: 0px;
+		  font-weight: bold;
+		  font-size:13px;
+		  border-bottom: 2px solid  #770000;
+		   box-shadow:  0px 7px 6px -6px rgba(0, 0, 0, 0.7);
+		  text-align: center;
+          text-transform: uppercase;
+	}
+	span{
+		display:block;
+		
+	}
+
+	.main{
+		width: 1170px;
+		margin:0 auto;
+		box-sizing: border-box;
+       display: flex;
+
+	}
+
+	.left-side{
+		 background:  #DADADA;
+		 box-sizing: border-box;
+
+	}
+	.left-side img{
+    border-color: black;
+    border: 3px solid;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    margin-right: 15px;
+	}
+	.placehold-text{
+		color: #656565;
+		font-weight: bold;
+		font-size: 13px;
+		text-align: center;
+		
+
+	}
+	.placehold-text p{
+		margin-top: 0px;
+	}
+
+	.title{
+		color: #770000;
+		font-weight: bold;
+		font-size:16px;
+		text-align: center;
+	}
+	.left-first{
+		display: flex;
+		flex-direction: column;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.edition {
+		background: #F4F4F4;
+		border-bottom: 2px solid;
+		border-color:#DADADA;
+ 
+	}
+
+	.edition p{
+		color: #656565;
+		text-align: center;
+		font-weight: bold;
+	}
+	 .list-edition{
+	 	
+	 	 background-color:  #F4F4F4;
+    color:#770000;
+    font-weight: bold;
+    text-align: center;
+	 }
+
+	 .left-second{
+	color:#656565;
+	display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin-left: 11px;
+	margin-right: 11px;
+    margin-top:2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+	 }
+
+	 .g2018{
+	 	background-color: #F4F4F4;
+	 	margin-bottom: 4px;
+	 	
+	 }
+	 .g2017{
+	 	background-color: #F4F4F4;
+	 		margin-bottom: 4px;
+
+	 }
+	 .g2016{
+	 	background-color: #F4F4F4;
+	 		margin-bottom: 4px;
+
+	 }
+
+	 .middle-side{
+    border:2px solid #DADADA;
+    display: flex;
+    font-size:14px;
+    margin-left:12px;
+	 }
+
+
+	 .list-names{
+	color: #656565;
+	display: flex;
+    flex-direction: column;
+    padding-left:0;
+    margin-left:10px;
+    margin-top:5px;
+    width: 400px;
+    font-size: 16px;
+   
+	 }
+
+	 .together p{
+	 	margin: 0;
+	 }
+	 .download{
+	 	color: #770000;
+	 	font-weight: bold;
+
+	 }
+	 .separated{
+	 	display: flex;
+	 	flex-direction: column;
+	 }
+
+	 .download-last{
+	 	margin-top: 100px;
+	 	color: #770000;
+	 	font-weight: bold;
+	 }
+
+	 .info{
+	 margin-top:5px;
+    margin-left: 12px;;
+    color: #656565;
+    display: flex;
+    flex-direction: column;
+	 }
+	 .info p{
+	 	font-size: 15px;
+	 }
+	 
+	 .info p:nth-of-type(1){
+    margin-top: 5px;
+}
+	 .info p:nth-of-type(2){
+    margin-top: 37px;
+}
+.info p:nth-of-type(3){
+    margin-top: 50px;
+}
+.info p:nth-of-type(4){
+    margin-top:50px;
+}
+.info p:nth-of-type(5){
+    margin-top: 20px;;
+}
+.info p:nth-of-type(6){
+    margin-top: 55px;
+}
+
+.info p:nth-of-type(7){
+    margin-top: 32px;
+}
+.info p:nth-of-type(8){
+    margin-top: 22px;
+}
+
+.right-side{
+	background-color: #F4F4F4;
+	margin-left: 15px;
+    margin-right: 15px
+}
+
+.right-side img{
+	border-color: black;
+    border: 3px solid;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.search p{
+	color: #656565;
+	text-align: center;
+	font-weight: bold;
+}
+.search ul{
+	color: #770000;
+	margin-top:10px;
+	margin-bottom: 50px;
+}
+
+.search ul li{
+   margin-left: 10px;
+   margin-bottom: 7px;
+}
+
+.label{
+	color: #656565;
+	text-align: center;
+	font-weight: bold;
+}
+
+.place{
+	color: #656565;
+	font-weight: bold;
+	margin: 0 auto;
+}
+.address{
+	color: #656565;
+	margin: 0 auto;
+}
+.name{
+	color: #656565;
+	font-weight: bold;	
+	margin-bottom:10px;
+	margin-top:20px;
+
+}
+.role{
+color: #656565;
+	font-weight: bold;
+	margin: 0 auto;	
+}
+.phone{
+	color: #656565;
+	margin: 0 auto;
+}
+.email{
+	color: #656565;
+	margin: 0 auto;
+}
+
+.footer{
+	margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.header img{
+	margin-left: 100px;
+}
+}
+
+	
+</style>
+<body>
+<div class="header">
+	<img src="https://placehold.co/253x63" alt="">
+	<ul class="menu-bar">
+		<li>Начало</li>
+		<li>
+			<span>Цели</span>
+			<span>и обхват</span>
+
+		</li>
+		<li>
+			<span>Редакционна</span>
+			<span>колегия</span>
+
+		</li>
+		<li>
+			<span>Указания към</span>
+			<span>авторите</span>
+
+		</li>
+		<li>
+			<span>Указания към</span>
+			<span>рецензентите</span>
+
+		</li>
+		<li>
+			<span>Етична</span>
+			<span>политика</span>
+
+		</li>
+		<li style="color: #770000;">Aрхив</li>
+	</ul>
+</div>
+<div class="main">
+	<div class="left-side">
+			<img src="https://placehold.co/164x230" alt="">
+			<div class="placehold-text">
+				<p>ISSN 1310-0343 - печатно</p>
+				<p>ISSN 2367 - 6949 - онлайн</p>
+			</div>
+
+			<div class="left-first">
+				<p class="title">Tекущо издание</p>
+				<div class="edition">
+					<p>Издание 2019</p>
+				</div>
+				<div class="list-edition">
+					<p>бр. 4/2019г.</p>
+					<p>бр. 3/2019г.</p>
+					<p>бр. 2/2019г.</p>
+					<p>бр. 1/2019г.</p>
+				</div>
+
+			</div>
+			<div class="left-second">
+				
+					<div class="g2018"><p>Издание 2018</p></div>
+					<div class="g2017"><p>Издание 2018</p></div>
+					<div class="g2016"><p>Издание 2018</p></div>
+
+			
+			</div>
+		
+	</div>
+
+	<div class="middle-side">
+		<div class="list-names">
+			<div class="together">
+				<p>Мария Станимирова Токушева</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+			<div class="separated">
+				<p>Красимира Найденова</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+			
+			<div class="separated">
+				<p>Радина Димитрова Момчилова</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+			<div class="together">
+				<p>Адрияна Андреева, Андрей Александров</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+
+			<div class="separated">
+				<p>Златораз Йорданов</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+			<div class="separated">
+				<p>Венцислав Антонов Савов</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+			<div class="together">
+				<p>Жана Красимирова Лечева</p>
+				<p class="download">Изтегли статията</p>
+			</div>
+			<div class="separated">
+				<p>Тамара Ангелова Влайкова</p>
+				<p class="download-last">Изтегли статията</p>
+			</div>
+		</div>
+
+		<div class="info">
+			<p>Модел за определяне на оптимална производствена програма</p>
+			<p>Банки или пазари (поглед върху полезността им за България по<br>време на кризата от 2008г. и след нея)</p>
+			<p>Банковият персонал - фактор за клиентската миграция в дребното<br>банкиране</p>
+			<p>За действителността на забраните за упражняване на конкурентна <br> дейност паралелелно и/или след прекратяване на трудовия договор </p>
+			<p>За някои различия в уредбата на търговския представител в <br>Търговския закон и в правото на Европейския съюз</p>
+			<p>Прехвърляне на дружествени дялове в капитала на ООД <br>  Актуални нормативни промерни</p>
+			<p>Сравнително-правен анализ за неустойска и търговски залог</p>
+			<p>Реглагмент № 1672/2018 на ЕП и на съвета относно контрола на  <br>  паричните средства, които се внасят в съюза или изнасят от него и санкциите в българското законодателство при недеклариране на парични средства</p>
+		</div>
+	</div>
+
+
+	<div class="right-side">
+		<img src="https://placehold.co/161x161" alt="">
+		<div class="search">
+			<p>Търси статии:</p>
+			<ul>
+				<li>по година</li>
+				<li>по заглавие</li>
+				<li>по автор</li>
+			</ul>
+		</div>
+		<div class="contacts">
+			<p class="label">Контакти</p>
+			<div class="footer">
+			<p class="place">Икономически  <br> университет - Варна</p>
+			<p class="address">Бул. "Княз Борис I" № 77 9002 гр.Варна България</p>
+			<p class="name">Росица Заркова - </p>
+			<p class="role">технически секретар</p>
+			<p class="phone">0882 164 848</p>
+			<p class="email">sp.izvestiya@ue-varna.bg</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</body>
+</html>

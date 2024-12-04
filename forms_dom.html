@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	 <style>
+        input[type="number"] {
+            width: 120px; /* Adjust the width as needed */
+            
+    </style>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<table>
+				<tr><label for="common"><strong>Общи:</strong></label></tr>
+				<tr>
+					<td><label for="name">Име:</label></td>
+					<td>
+						<input type="text" id="name" name="name" placeholder="Въведете инициали" >
+					</td>
+				</tr>
+				<tr>
+				<td>
+				<label for="age">Възраст:</label>
+				</td>
+				<td> <input type="number" id="age" name="age" min="18" max="60" required placeholder="Въведете вашата възраст"></td>
+               </tr>
+               <tr>
+               <td>	<label for="gender">Пол:</label></td>
+               <td>
+               	<input type="radio" id="male" name="gender" value="1">
+               	<label for="male">Мъж</label>
+               	<br>
+               	<input type="radio" id="female" name="gender" value="1">
+               	<label for="male">Жена</label>
+               	
+               </td>
+               </tr>
+               <tr>
+					<td><label for="email">Имейл адрес:</label></td>
+					<td>
+						<input type="email" id="email" name="email" placeholder="Въведете вашия имейл" >
+					</td>
+				</tr>
+				 <tr>
+					<td><label for="height">Височина:</label></td>
+					<td>
+						<input type="number" id="height" name="height" placeholder="Въведете височина в см." >
+					</td>
+				</tr>
+				 <tr>
+					<td><label for="weight">Тегло:</label></td>
+					<td>
+						<input type="number" id="weight" name="weight" placeholder="Въведете тегло в кг." >
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="specific"><strong>Специфични:</strong></label></td>
+				</tr>
+				<tr>
+					
+						<td><label for="allergy">Алергии:</label></td>
+					
+					<td>
+						<p><i>Имате ли алергии:</i></p>
+                         <label for="nikel">Никел</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="dust akari">Прахови акари</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="polen">Полен</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="matica">Матица на стъртилото</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="skin pr">Кожни продукти</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="latex">Латекс</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="fruit al">Плодовите алергии</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="tree dust">Дървесен пращец</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="skin care and medic">Кожнa грижа и медикаменти</label>
+						<input type="checkbox" id="glutten"><br>
+						 <label for="milk pr">Мляко или млечни продукти</label>
+						<input type="checkbox" id="glutten"><br>
+					</td>
+				
+			</tr>
+			<tr>
+               <td>	<label for="frequency">Честота:</label></td>
+               <td>
+               	  	<p><i>Колко често изпитвате алергична реакция?<i></p>
+               	<input type="radio" id="sometimes" name="frequency" value="1">
+               	<label for="sometimes">Понякога</label>
+               	<br>
+               	<input type="radio" id="often" name="frequency" value="2">
+               	<label for="often">Често</label><br>
+               	<input type="radio" id="always" name="frequency" value="3">
+               	<label for="always">Винаги</label>
+               	
+               	
+               </td>
+               </tr>
+
+			<tr>
+<td><label for="allergy">Симптоми:</label></td>
+					
+					<td>
+						<p><i>Какви симптоми изпитвате при алергична реакция?:</i></p>
+                         <label for="obriv">Обрив</label>
+						<input type="checkbox" id="obriv"><br>
+						 <label for="syrbej">Сърбеж</label>
+						<input type="checkbox" id="syrbej"><br>
+						 <label for="otok">Оток</label>
+						<input type="checkbox" id="otok"><br>
+						 <label for="dishane">Трудности с дищането</label>
+						 <input type="checkbox" id="dishane"><br>
+						
+					</td>
+				
+			</tr>
+			<tr>
+<td><label for="allergy">Медикаменти:</label></td>
+					
+					<td>
+						<p><i>Приемате ли в момента други лекарства против алергии?:</i></p>
+                         <label for="h1">H1 Антихистамини</label>
+						<input type="checkbox" id="h1"><br>
+						 <label for="h2">Н2 Антихистамини</label>
+						<input type="checkbox" id="h2"><br>
+						 <label for="cell stab">Клетъчни стабилизатори</label>
+						<input type="checkbox" id="cell stab"><br>
+						 <label for="dekong">Деконгестанти</label>
+						 <input type="checkbox" id="dekong"><br>
+						
+					</td>
+				
+			</tr>
+			<tr>
+<td><label for="allergy">Съпровождащи заболявания:</label></td>
+					
+					<td>
+						<p><i>Отбележете съпровождащи заболявания?:</i></p>
+                         <label for="asthma">Астма</label>
+						<input type="checkbox" id="h1"><br>
+						 <label for="hyper">Хипертония</label>
+						<input type="checkbox" id="h2"><br>
+						 <label for="diabetes">Диабет</label>
+						<input type="checkbox" id="cell stab"><br>
+						 <label for="hobb">ХОББ</label>
+						 <input type="checkbox" id="dekong"><br>
+						  <label for="liver">Бъбречно заболяване</label>
+						 <input type="checkbox" id="dekong"><br>
+						  <label for="demention">Деменция</label>
+						 <input type="checkbox" id="dekong"><br>
+						  <label for="alcheimer">Алцхаймер</label>
+						 <input type="checkbox" id="dekong"><br>
+						
+					</td>
+				
+			</tr>
+			<tr>
+    <td>
+        <label for="questions">Въпроси:</label>
+    </td>
+    <td>
+        <p>Имате ли в близкото си семейство хора с кожни заболявания?</p>
+        <input type="radio" id="skin-yes" name="skinFamily" value="yes">
+        <label for="skin-yes">Да</label>
+        <input type="radio" id="skin-no" name="skinFamily" value="no">
+        <label for="skin-no">Не</label>
+
+        <p>Консумирате ли редовно витамини или добавки за кожата?</p>
+        <input type="radio" id="vitamins-yes" name="vitamins" value="yes">
+        <label for="vitamins-yes">Да</label>
+        <input type="radio" id="vitamins-no" name="vitamins" value="no">
+        <label for="vitamins-no">Не</label>
+
+        <p>Участие в клинично проучване в рамките на 60 дни преди скрининга?</p>
+        <input type="radio" id="60days-yes" name="clinicalStudy" value="yes">
+        <label for="60days-yes">Да</label>
+        <input type="radio" id="60days-no" name="clinicalStudy" value="no">
+        <label for="60days-no">Не</label>
+
+        <p>Повишена телесна температура (≥39,0°C аксиларна)?</p>
+        <input type="radio" id="high-temp-yes" name="highTemp" value="yes">
+        <label for="high-temp-yes">Да</label>
+        <input type="radio" id="high-temp-no" name="highTemp" value="no">
+        <label for="high-temp-no">Не</label>
+    </td>
+</tr>
+<tr>
+					<td>
+						<p>Изберете прием на предписаната терапия</p>
+					</td>
+					<td>
+						<select name="sauce" id="sauce">
+							<option value="">---</option>
+							<option value="1">5 days</option>
+							<option value="2">7 days</option>
+							<option value="3">10 days</option>
+
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="submit" value="send">
+					</td>
+				</tr>
+
+
+			</table>
+		</fieldset>
+
+	</form>
+
+
+</body>
+</html>
