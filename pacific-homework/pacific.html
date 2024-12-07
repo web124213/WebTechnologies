@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @font-face{
+    font-family: 'Whitney';
+    src:url('fonts/WhitneyHTF-Book.otf'),
+url('fonts/Whitney-Book.ttf')format('true type');
+font-weight: normal;
+font-style: normal;
+}
+body{
+    font-family: 'Whitney';
+    direction: 1tr;
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+    background:#ffffff;
+    font-size: 0px;
+}
+.body{
+    border-top: solid 2px black #394551;
+}
+
+
+
+.container{
+    width:950px;
+    margin:0 auto;
+}
+.site-title{
+padding-top: 32px;
+padding-bottom: 35px;
+display: flex;
+justify-content: space-between; 
+ 
+}
+.site-title-h1{
+font-size:16px;
+color: #00abdb;
+align-self: center;
+margin-top:5px;
+}
+
+
+.menu{
+    list-style-type: none;
+    margin: 0px;
+    padding: 12px 0px;
+}
+
+.menu>li{
+    margin-right: 40px;
+    font-size: 16px;
+    display: inline-block;
+}
+.menu>li a{
+color:black;
+text-decoration: none;
+}
+nav{
+    border-top: solid 1px #dfdfdf;
+    border-bottom: solid 1px #dfdfdf;
+}
+
+.push{
+    height: 80px;
+}
+.dropdown{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.page{
+    border-top: 1px solid black;
+    margin-bottom: -80px;
+    min-height: 100%;
+}
+.submenu:hover .dropdown{
+   visibility: visible;
+   opacity: 1;
+    transition: all 0.7 ease;
+}
+.dropdown>li>a{
+width: 120px;
+padding: 6px 12px;
+color:white;
+background: #6eb43f;
+display: flex;
+transition: all 0.7 ease;
+}
+.dropdown>li>a:hover{
+    background: #0082a7;
+}
+section{
+    padding-top: 79px;
+    display: flex;
+    padding-bottom: 113px;
+}
+article{
+width: 155px;
+height: 155px;
+padding: 15px;
+background: #f1f3f2;
+font-size: 14px;
+color:#8c8c8c;
+margin-right: 5px;
+ 
+}
+.article-img{
+    height: 40px;
+    margin-top: 47px;
+}
+.article-text{
+    margin-top: 15px;
+}
+.partners{
+    border-top: solid 1px #dfdfdf;
+}
+.partners-text{
+    margin-top: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+.partners-logo>ul{
+    padding: 0px;
+    margin: 0px;
+}
+.partners-logo>ul>li{
+    margin-right: 5px;
+    display: inline-block;
+}
+.partners-logo>ul>li{
+    width: 100px;
+}
+.footer{
+    height: 80px;
+    background: #f1f3f2; 
+}
+</style>
+</head>
+<body>
+    <div class = "page">
+        <header class = "container">
+            <div class = "site-title">
+            <img src="logo.png" alt="">
+            <div class="site-title-h1">
+            Enterprise Brand Management
+        </div>
+    </div>
+</header>
+        <nav>
+            <div class="container"> 
+                <ul class = "menu">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li class = "submenu"> 
+                        <a href="#">Products</a>
+                        <ul class = "dropdown">
+                      <li><a href="#">item 1</a></li> 
+                      <li><a href="#">item 2</a></li> 
+                      <li><a href="#">item 3</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>    
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li> 
+                </ul>
+            </div>  
+        </nav>
+        <section class = "container">
+           <article>
+           <div class = "article-img"><img src="approve.png" alt=""></div>
+           <div class ="article-text">
+                Easy to use asset management and workflow software
+           </div>   
+           </article> 
+            <article>
+           <div class = "article-img"><img src="designdev.png" alt=""></div>
+           <div class ="article-text">
+                Tailor a custom software solution for your business
+           </div>   
+           </article> 
+            <article>
+           <div class = "article-img"><img src="goproof.png" alt=""></div>
+           <div class ="article-text">
+                Artwork review and approval made easy
+           </div>   
+           </article> 
+            <article>
+           <div class = "article-img"><img src="apropos.png" alt=""></div>
+           <div class ="article-text">
+              Quickly build and easily maintain dynamic websites
+           </div>   
+           </article>
+           ' <article>
+           <div class = "article-img"><img src="apropos.png" alt=""></div>
+           <div class ="article-text">
+                Quickly build and easily maintain dynamic websites
+           </div>   
+           </article> 
+        </section>
+        <div class = "partners">
+          <div class = "container"> 
+            <div class = "partners-text">
+            Interact Pacific Solution are used the following Large enterprise marketing organisations.  
+            </div>
+            <div class = "partners-logo">
+            <ul> 
+                    <li><img src="lion.png"></li>
+                    <li><img src="common.png"></li>
+                    <li><img src="nestle.png"></li>
+                    <li><img src="australia.png"></li>
+                    <li><img src="woolworths.png"></li>
+                    <li><img src="3m.png"></li>
+                    <li><img src="simplot.png"></li>
+                    <li><img src="bankwest.png"></li>
+                    <li><img src="pepsi.png"></li>   
+            </ul>  
+            </div>
+          </div> 
+        </div>
+        <div class = "push">   
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
+ 
